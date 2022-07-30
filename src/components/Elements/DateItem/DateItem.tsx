@@ -1,7 +1,7 @@
-import { FC } from 'react';
+interface DateItemProps {
+  date: string;
+}
 
-export const DateItem: FC = () => {
-  const date = new Date().getDate();
-
+export const DateItem = ({ date }: DateItemProps) => {
   return <div data-testid="DateItemTest">{date}</div>;
 };

@@ -1,5 +1,9 @@
-import React, { FC } from 'react';
+import React from 'react';
 
-export const DateList: FC = ({ children }) => {
+type Props = {
+  children?: React.ReactNode;
+};
+
+export const DateList = ({ children }: Props) => {
   return <ul>{children}</ul>;
 };

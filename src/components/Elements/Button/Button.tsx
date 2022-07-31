@@ -7,12 +7,18 @@ const ButtonEl = styled.button`
   background: none;
   border-radius: 20px;
   border: 1px solid #e0e0e0;
+  cursor: pointer;
 `;
 
 interface ButtonProps {
   children: React.ReactNode;
+  onClick: () => void;
 }
 
-export const Button = ({ children }: ButtonProps) => {
-  return <ButtonEl data-testid={'ButtonTest'}>{children}</ButtonEl>;
+export const Button = ({ children, onClick }: ButtonProps) => {
+  return (
+    <ButtonEl data-testid={'ButtonTest'} onClick={onClick}>
+      {children}
+    </ButtonEl>
+  );
 };

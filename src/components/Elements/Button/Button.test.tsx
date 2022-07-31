@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 
 describe('Button components', () => {
   it('render Button', () => {
-    render(<Button>button</Button>);
+    render(<Button onClick={() => {}}>button</Button>);
 
     expect(screen.getByTestId('ButtonTest')).toBeInTheDocument();
   });

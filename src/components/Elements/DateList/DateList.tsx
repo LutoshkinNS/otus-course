@@ -8,10 +8,9 @@ interface DateListProps {
 const List = styled.ul`
   display: flex;
   align-items: center;
-  list-style-type: none;
   padding: 0;
 `;
 
 export const DateList = ({ children }: DateListProps) => {
-  return <List>{children}</List>;
+  return <List data-testid={'DateListTest'}>{children}</List>;
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../Button';
 import styled from 'styled-components';
 
-const Icon = styled.div<{ primary: boolean }>`
+const Icon = styled.div<{ primary: boolean | undefined }>`
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -44,7 +44,7 @@ export const ToggleButton = ({ children, onClick, primary }: ToggleButtonProps) 
       <Button onClick={onClick}>
         {
           <Wrapper>
-            <Icon primary>
+            <Icon primary={primary}>
               <Check />
             </Icon>
             <Text>{children}</Text>

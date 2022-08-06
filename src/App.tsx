@@ -4,7 +4,7 @@ import { ToggleButton } from './components/Elements';
 import { useState } from 'react';
 
 function App() {
-  const [isShow, setIsShow] = useState<boolean>(false);
+  const [isShow, setIsShow] = useState(false);
 
   return (
     <>

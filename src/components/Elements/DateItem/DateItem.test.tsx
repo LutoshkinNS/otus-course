@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 
 describe('DateItem', () => {
   it('render DateItem ', () => {
-    render(<DateItem date={'10'} />);
+    render(<DateItem date="10" />);
 
     expect(screen.getByTestId('DateItemTest')).toBeInTheDocument();
   });

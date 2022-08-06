@@ -7,7 +7,7 @@ describe('DateList', () => {
   it('render DateList ', () => {
     render(
       <DateList>
-        <DateItem date={'Jul 10'} />
+        <DateItem date="Jul 10" />
       </DateList>
     );
 

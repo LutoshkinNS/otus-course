@@ -40,7 +40,7 @@ interface ToggleButtonProps {
 
 export const ToggleButton = ({ children, onClick, primary }: ToggleButtonProps) => {
   return (
-    <div data-testid={'ToggleButtonTest'}>
+    <div data-testid="ToggleButtonTest">
       <Button onClick={onClick}>
         {
           <Wrapper>

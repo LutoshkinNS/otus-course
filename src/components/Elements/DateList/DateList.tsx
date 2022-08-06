@@ -12,5 +12,5 @@ const List = styled.ul`
 `;
 
 export const DateList = ({ children }: DateListProps) => {
-  return <List data-testid={'DateListTest'}>{children}</List>;
+  return <List data-testid="DateListTest">{children}</List>;
 };

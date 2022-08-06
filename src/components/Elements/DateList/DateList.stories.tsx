@@ -10,7 +10,7 @@ export default {
 
 export const Primary: ComponentStory<typeof DateList> = () => (
   <DateList>
-    <DateItem date={'Jul 9'} />
-    <DateItem date={'Jul 10'} />
+    <DateItem date="Jul 9" />
+    <DateItem date="Jul 10" />
   </DateList>
 );

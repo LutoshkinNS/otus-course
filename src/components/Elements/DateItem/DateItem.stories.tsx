@@ -7,4 +7,4 @@ export default {
   component: DateItem,
 } as ComponentMeta<typeof DateItem>;
 
-export const Primary: ComponentStory<typeof DateItem> = () => <DateItem date={'Jul 20'} />;
+export const Primary: ComponentStory<typeof DateItem> = () => <DateItem date="Jul 20" />;

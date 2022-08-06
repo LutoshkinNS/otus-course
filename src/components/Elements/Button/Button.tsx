@@ -17,7 +17,7 @@ interface ButtonProps {
 
 export const Button = ({ children, onClick }: ButtonProps) => {
   return (
-    <ButtonEl data-testid={'ButtonTest'} onClick={onClick}>
+    <ButtonEl data-testid="ButtonTest" onClick={onClick}>
       {children}
     </ButtonEl>
   );

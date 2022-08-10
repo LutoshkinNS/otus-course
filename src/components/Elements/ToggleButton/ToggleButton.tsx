@@ -38,19 +38,18 @@ interface ToggleButtonProps {
   primary?: boolean;
 }
 
-export const ToggleButton = ({ children, onClick, primary }: ToggleButtonProps) => {
+export const ToggleButton = (props: ToggleButtonProps) => {
+  const { children, onClick, primary, ...other } = props;
   return (
-    <div data-testid="ToggleButtonTest">
-      <Button onClick={onClick}>
-        {
-          <Wrapper>
-            <Icon primary={primary}>
-              <Check />
-            </Icon>
-            <Text>{children}</Text>
-          </Wrapper>
-        }
-      </Button>
-    </div>
+    <Button onClick={onClick} {...other}>
+      {
+        <Wrapper>
+          <Icon primary={primary}>
+            <Check />
+          </Icon>
+          <Text>{children}</Text>
+        </Wrapper>
+      }
+    </Button>
   );
 };

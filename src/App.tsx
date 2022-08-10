@@ -19,6 +19,7 @@ function App() {
         onClick={() => {
           setIsShow(true);
         }}
+        data-testid="ToggleButtonTest"
       >
         {isShow ? 'hide' : 'show'}
       </ToggleButton>

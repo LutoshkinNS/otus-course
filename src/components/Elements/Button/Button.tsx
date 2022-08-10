@@ -15,9 +15,10 @@ interface ButtonProps {
   onClick: () => void;
 }
 
-export const Button = ({ children, onClick }: ButtonProps) => {
+export const Button = (props: ButtonProps) => {
+  const { children, onClick, ...other } = props;
   return (
-    <ButtonEl data-testid="ButtonTest" onClick={onClick}>
+    <ButtonEl data-testid="ButtonTest" onClick={onClick} {...other}>
       {children}
     </ButtonEl>
   );

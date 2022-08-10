@@ -17,9 +17,8 @@ describe('App tests', () => {
   });
 
   it('should show list after click ToggleButton', async () => {
-    /*не смог понять почему не срабатывает screen.getByTestId('ToggleButtonTest') */
     expect(ToggleButton).toHaveTextContent('show');
-    await userEvent.click(screen.getByTestId('ButtonTest'));
+    await userEvent.click(ToggleButton);
     expect(ToggleButton).toHaveTextContent('hide');
     expect(screen.getByTestId('DateListTest')).toBeInTheDocument();
     expect(screen.getByTestId('DateListTest').innerHTML.length).toBeGreaterThan(28);
